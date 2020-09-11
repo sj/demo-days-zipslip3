@@ -8,7 +8,9 @@ import java.util.zip.ZipInputStream;
 class MyApplication {    
     public static void main(final String[] argv) throws Exception {
         System.out.println("Hello world!");
+    }
 
+    private static void extractZip() throws Exception {
         ZipInputStream zipstream = new ZipInputStream(
             new FileInputStream(new File("my-zip-file.zip")));
         
